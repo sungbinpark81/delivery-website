@@ -1,0 +1,673 @@
+﻿<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Affordable &amp; Reliable Deliveries - Premium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    "colors": {
+                        "navy": "#0A1128",
+                        "navy-light": "#152042",
+                        "charcoal": "#4A4A4A",
+                        "charcoal-light": "#737373",
+                        "off-white": "#F7F7F5",
+                        "pure-white": "#FFFFFF",
+                        "accent": "#C4A484"
+                    },
+                    "fontFamily": {
+                        "editorial": ["Playfair Display", "serif"],
+                        "sans": ["Montserrat", "sans-serif"]
+                    },
+                    "spacing": {
+                        "margin-mobile": "32px",
+                        "margin-desktop": "128px",
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #F7F7F5;
+            color: #0A1128;
+            font-family: 'Montserrat', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .editorial-image-hover {
+            transition: filter 0.7s ease, transform 0.7s ease;
+        }
+        .editorial-service-item:hover .editorial-image-hover {
+            filter: brightness(0.6);
+            transform: scale(1.02);
+        }
+        .service-bg {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .editorial-service-item:hover .service-bg {
+            opacity: 1;
+        }
+    #main-nav { display: flex !important; align-items: center !important; gap: 0 !important; }
+    #main-nav a { padding: 0 18px !important; font-size: 0.75rem !important; letter-spacing: 0.1em !important; text-transform: uppercase !important; color: #0A1128 !important; text-decoration: none !important; font-family: Montserrat, sans-serif !important; white-space: nowrap !important; }
+    #main-nav a:last-child { background: #0A1128 !important; color: #fff !important; padding: 10px 22px !important; margin-left: 8px !important; }
+    #main-nav a:hover { color: #fd8b00 !important; }
+    #main-nav a:last-child:hover { background: #fd8b00 !important; color: #fff !important; }    /* 모달 내부 nav 간격 */
+    [id^="page-"] nav { display: flex !important; gap: 1.5rem !important; align-items: center !important; }
+    [id^="page-"] nav a { white-space: nowrap !important; margin: 0 !important; padding: 0 8px !important; }    </style>
+</head>
+<body class="bg-off-white text-navy font-sans antialiased overflow-x-hidden selection:bg-navy selection:text-off-white">
+<!-- Navbar -->
+<header class="w-full px-8 md:px-16 py-5 flex justify-between items-center bg-off-white z-50 sticky top-0 border-b border-navy/5 shadow-sm">
+  <a class="font-editorial text-lg font-semibold text-navy" href="/">Affordable &amp; Reliable Deliveries</a>
+  <nav id="main-nav" style="display:flex;align-items:center;">
+    <a style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:#0A1128;text-decoration:none;font-family:Montserrat,sans-serif;" href="#home">Home</a>
+    <a style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:#0A1128;text-decoration:none;font-family:Montserrat,sans-serif;" href="#services">Services</a>
+    <a style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:#0A1128;text-decoration:none;font-family:Montserrat,sans-serif;" href="#service-area">Service Area</a>
+    <a style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;background:#0A1128;color:#fff;padding:0.6rem 1.4rem;text-decoration:none;font-family:Montserrat,sans-serif;margin-left:1rem;" href="#contact">Get a Quote</a>
+  </nav>
+  <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-navy">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+  </button>
+</header>
+<div id="mobile-menu" class="hidden md:hidden bg-off-white border-b border-navy/10 px-8 py-4 flex flex-col gap-4">
+  <a class="text-xs tracking-[0.15em] uppercase text-navy" href="#home">Home</a>
+  <a class="text-xs tracking-[0.15em] uppercase text-navy" href="#services">Services</a>
+  <a class="text-xs tracking-[0.15em] uppercase text-navy" href="#service-area">Service Area</a>
+</div>
+<!-- Editorial Hero -->
+<section class="relative w-full min-h-[90vh] px-margin-mobile md:px-margin-desktop pb-32 flex flex-col justify-center" id="home">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-7 z-10 relative"><div class="mb-6 flex flex-col items-start">
+  <span class="font-sans font-bold text-base md:text-lg text-[#003366] uppercase tracking-widest">
+    Affordable &amp; Reliable Deliveries
+  </span>
+  <div class="w-12 h-0.5 bg-[#fd8b00] mt-2"></div>
+</div>
+<h1 class="font-editorial text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-8 font-medium">Fast &amp; Deliveries Across the GTA</h1>
+<div class="bg-pure-white p-8 md:p-12 max-w-lg shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] border border-navy/5 ml-0 md:ml-12 mt-[-2rem] md:mt-0 relative z-20">
+<p class="text-sm md:text-base text-charcoal leading-relaxed mb-8 font-light">We provide simple, reliable delivery services across the GTA. We focus on getting your items where they need to go, on time.</p>
+<a class="inline-flex items-center gap-4 text-xs tracking-[0.2em] uppercase text-navy group" href="#contact">
+<span class="border-b border-navy pb-1 group-hover:pr-4 transition-all duration-300">Discover More</span>
+<span class="material-symbols-outlined text-sm transform group-hover:translate-x-2 transition-transform duration-300">east</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-5 relative h-[60vh] md:h-[80vh] w-full mt-12 md:mt-0">
+<img alt="Hero Image" class="w-full h-full object-cover grayscale-[20%] contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZCgQ-ki5FUhR1Ceu4CvjhLOKmxtXSiE1y9BGvEML2D9P6L5DI3bCXMHc8qpOoXyMqWjIvrkr6QTBGwpb84_ezI96grERUpLcJrg4Mf_qsIcN7hZFxDl0X5Tp2ZgweTlgXPizaYXPYhFNKnZJHj24-JNWKjpr6j_9qcH6jLwqwJtXa3fQljp--GkGv_6SyLn_8C-92ZxmSde7exURfQrRH1wUeCSLvTNp0xKFTWVqKglnJ1ks3go4V3Wbdw0ILjIEVQ3rrVsDcXSwf">
+</div>
+</div>
+</section>
+<!-- Broken Grid: Why Choose Us -->
+<section class="py-32 bg-pure-white px-margin-mobile md:px-margin-desktop border-t border-navy/10">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 relative">
+<div class="lg:col-span-4 flex flex-col justify-center">
+<h2 class="font-editorial text-4xl md:text-5xl text-navy mb-8">Why work with us</h2>
+<p class="text-charcoal font-light leading-relaxed mb-12">
+                    Our approach to logistics is not merely about moving items; it is an exercise in reliability and aesthetic precision.
+                </p>
+</div>
+<div class="lg:col-span-8 relative">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
+<!-- Item 1 -->
+<div class="flex flex-col md:mt-24">
+<span class="font-editorial text-4xl text-navy/20 mb-4">01</span>
+<h3 class="font-editorial text-2xl text-navy mb-4">Fair Pricing</h3>
+<p class="text-sm text-charcoal font-light leading-relaxed">Tailored pricing models designed for exclusive logistics requirements without compromise.</p>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col">
+<span class="font-editorial text-4xl text-navy/20 mb-4">02</span>
+<h3 class="font-editorial text-2xl text-navy mb-4">Always On Time</h3>
+<p class="text-sm text-charcoal font-light leading-relaxed">Time is an art. We guarantee your shipments arrive precisely as orchestrated.</p>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col md:mt-24">
+<span class="font-editorial text-4xl text-navy/20 mb-4">03</span>
+<h3 class="font-editorial text-2xl text-navy mb-4">Safe &amp; Reliable</h3>
+<p class="text-sm text-charcoal font-light leading-relaxed">A refined fleet and seasoned professionals handling your most critical assets.</p>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col">
+<span class="font-editorial text-4xl text-navy/20 mb-4">04</span>
+<h3 class="font-editorial text-2xl text-navy mb-4">Everywhere in the GTA</h3>
+<p class="text-sm text-charcoal font-light leading-relaxed">Seamless integration and coverage across the entire Greater Toronto Area.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Numbered List Services -->
+<section class="py-32 bg-navy text-off-white px-margin-mobile md:px-margin-desktop" id="services">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-editorial text-4xl md:text-6xl mb-24 font-light border-b border-off-white/20 pb-8">Our Services</h2>
+<div class="flex flex-col w-full">
+<!-- Service 01 -->
+<div class="editorial-service-item relative border-b border-off-white/20 py-12 md:py-16 group cursor-pointer overflow-hidden">
+<div class="absolute inset-0 z-0 service-bg">
+<img alt="Same-Day" class="w-full h-full object-cover opacity-30 grayscale editorial-image-hover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYFHcJCcPysC1Py5xe2FIU9HQPgtt8v7mlYfgE7ePwNHjlgZ9zwWx6P70-w-mGnoCESIT6Zyx3Z-dNwP2GO_yc8grrPl3jbCosBndTQ6c2Wfuy33RCsvtjclr06DkG4WFPN7RtO5TFNOn82yn52t6lwEgK-nUjjTZkvYK1nJBGRmLVW8BwPmdstshAwdXtHnyeLbofBSskP8q_J0b-YsW7-1HMmB-u9fRn0V16UUU864bvShDMegCdiqvpVd8ONsatJ59AAHgk7GSX">
+</div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
+<div class="flex items-baseline gap-8 md:gap-16">
+<span class="font-editorial text-2xl md:text-4xl text-off-white/40 italic">01</span>
+<h3 class="font-editorial text-3xl md:text-5xl group-hover:ml-4 transition-all duration-500">Fast Delivery</h3>
+</div>
+<div class="md:w-1/3">
+<p class="text-sm font-light text-off-white/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">
+                            Urgent shipments handled with priority. We ensure your packages reach their destination across the GTA on the very same day.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Service 02 -->
+<div class="editorial-service-item relative border-b border-off-white/20 py-12 md:py-16 group cursor-pointer overflow-hidden">
+<div class="absolute inset-0 z-0 service-bg">
+<img alt="Scheduled" class="w-full h-full object-cover opacity-30 grayscale editorial-image-hover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQNan2KSs5XOAzIaSSI2IQmakHBnvtdm4llxBVRlUmoM4bcmDPU6hHXviANLzgT859LrpDtXwtULDqVFhSymspNUAuvCXjmEtphYILIjEWy3bsaqmjvXzAKyYMb07oQ8PsXwOFQJnc-nPGeVP_IOixcyC34lGp4-Zz_WiR-AYiRxzryLyP84acC1op3Fqa7UPBigPXodkjB3N396LE6hws934SXklezW8d2e70TlpfDoMjJM3I38vzWfE8lG6uz4pa5pcnKxDn3jbp">
+</div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
+<div class="flex items-baseline gap-8 md:gap-16">
+<span class="font-editorial text-2xl md:text-4xl text-off-white/40 italic">02</span>
+<h3 class="font-editorial text-3xl md:text-5xl group-hover:ml-4 transition-all duration-500">Scheduled Pickup</h3>
+</div>
+<div class="md:w-1/3">
+<p class="text-sm font-light text-off-white/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">
+                            Plan ahead with our precise scheduled delivery services. Perfect for recurring orders and maintaining steady supply chains.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Service 03 -->
+<div class="editorial-service-item relative border-b border-off-white/20 py-12 md:py-16 group cursor-pointer overflow-hidden">
+<div class="absolute inset-0 z-0 service-bg">
+<img alt="Logistics" class="w-full h-full object-cover opacity-30 grayscale editorial-image-hover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnBfifUtdgJIGXmY1J76_lJ5nM2rbV8xPU1gHvvGTmqZ-EsVLFgZhX3Z3gOruWxlRh54MSwhDPJMtaPVJAy3ZPZQ0pS0kOiVTN4C4-gN-5wlAbozggStx3DLIR_omsWvRmkvjIqjfBDlbF9qjSocEgwG_HTgoWlNCA-wsPNop0YHNdeRGA550MVC0zO7n0W720X1mYPjXvMolXfllfyf6QCUKi-CWx_DiT1SantVxoGvt8L5WKsOZqxr6vt9nilrN8tsty_Siv-oY4">
+</div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
+<div class="flex items-baseline gap-8 md:gap-16">
+<span class="font-editorial text-2xl md:text-4xl text-off-white/40 italic">03</span>
+<h3 class="font-editorial text-3xl md:text-5xl group-hover:ml-4 transition-all duration-500">Business Logistics</h3>
+</div>
+<div class="md:w-1/3">
+<p class="text-sm font-light text-off-white/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">
+                            Dedicated support for logistics companies, bakeries, and food terminals requiring specialized handling and routing.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Service 04 -->
+<div class="editorial-service-item relative py-12 md:py-16 group cursor-pointer overflow-hidden border-b border-off-white/20">
+<div class="absolute inset-0 z-0 service-bg">
+<img alt="Large Item" class="w-full h-full object-cover opacity-30 grayscale editorial-image-hover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiMQt_HnvED9BXAxMaGjH-28hGkcx4pshIWAfLJSqPm2wivFMDZZ23omYYIPgn0U2iFAY6LRsERQ5tcRLFhO2eUOBcwbsYHUCTV4PNuH9nrcSVubiMZzzcL3XzHRqiSZb-GQWGc_3DDgeCur64QRSQcjt6pD97Fzlku_FMaI1hSt7og6WAg2BMGKPzFwtEWnyGWJoPsGm5tHobpGXPaW24PIzlK1L-ASl_gZoUmHlLpjHu60m57giELKwMnoWN1WzXx-8BsnNhzD8X">
+</div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
+<div class="flex items-baseline gap-8 md:gap-16">
+<span class="font-editorial text-2xl md:text-4xl text-off-white/40 italic">04</span>
+<h3 class="font-editorial text-3xl md:text-5xl group-hover:ml-4 transition-all duration-500">Large Item Moving</h3>
+</div>
+<div class="md:w-1/3">
+<p class="text-sm font-light text-off-white/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">
+                            Safe and secure transport for bulky or heavy items that require specialized vehicles and handling expertise.
+                        </p>
+</div>
+</div>
+</div>
+<div class="editorial-service-item relative py-12 md:py-16 group cursor-pointer overflow-hidden border-b border-off-white/20">
+<div class="absolute inset-0 z-0 service-bg">
+<img alt="Refrigerated Delivery" class="w-full h-full object-cover opacity-30 grayscale editorial-image-hover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUcVPRMWlJ6_de5FYc7ZfHQeZd9gpzA6sWV9CqvwB3qWR5X3gxiwKXY2gF-NxEliEXdLXD5YtZZzSxzgcf911AdU-XzVM0XYGxn2t0sqlCQfgLFiIa9xSuBPCkHDQ87y5S2TTuhYDZtBrTFJer0MkAq9USrynDzu8ZTd9XILBITYORsuxu3sxxxQokFhonl9IzE6MEHJAY4y5ckhlPJtVa7gI3bskGGd7iCFPcLXN6V15TSA4IkTSF-KV20WVUWiHQwRtsAxxPZxN2">
+</div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
+<div class="flex items-baseline gap-8 md:gap-16">
+<span class="font-editorial text-2xl md:text-4xl text-off-white/40 italic">05</span>
+<div class="flex items-center gap-4 group-hover:ml-4 transition-all duration-500">
+<h3 class="font-editorial text-3xl md:text-5xl">Refrigerated Delivery</h3>
+</div>
+</div>
+<div class="md:w-1/3 flex flex-col gap-6">
+<p class="text-sm font-light text-off-white/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">
+                            We offer temperature-controlled delivery for perishable goods, fresh produce, bakery items, and food products across the GTA. Your cargo stays fresh from pickup to delivery.
+                        </p>
+<a href="#contact" class="inline-flex w-fit items-center gap-2 text-xs tracking-[0.2em] uppercase text-off-white border-b border-off-white/30 pb-1 hover:border-off-white transition-colors opacity-0 group-hover:opacity-100 duration-700 delay-100">
+                            Request a Quote
+                        </a>
+</div>
+</div>
+</div></div>
+</div>
+</section>
+<!-- Minimal Map/Area -->
+<section class="py-32 bg-pure-white px-margin-mobile md:px-margin-desktop" id="service-area">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-24">
+<div class="md:w-1/2 relative">
+<div class="aspect-[4/5] overflow-hidden">
+<img alt="Map of GTA" class="w-full h-full object-cover grayscale contrast-150" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuz1I7oBCnjwUc78JgiotZOdUNoxvu2tq6aAZFankpx0UYDyss-a3AXCcSJpJ-slfEmqlAOwDIEdYSaAxBU3hzx9ppamtfhsr-iMed-8liqObAEFaFJcBoPNUbOrqTA6DUTDRLt7SNM1eZDaKvoSoHf-sF9-sUK2upL7qlehk2CeqHLWYtSIpdbt_wzw4wTSc4AlGGZtFkISqG265djqj_dSr5CnwPMElngl_wi97rHe-MCoSpwmbuz4WOS8CNnScl0kLfk5bgMHv6">
+</div>
+<div class="absolute -bottom-12 -right-12 bg-off-white p-12 z-10 border border-navy/5 hidden md:block w-3/4">
+<p class="text-xs tracking-[0.2em] uppercase text-charcoal mb-4">Coverage</p>
+<p class="font-editorial text-2xl text-navy">The Greater Toronto Area, covered flawlessly.</p>
+</div>
+</div>
+<div class="md:w-1/2 flex flex-col">
+<h2 class="font-editorial text-4xl md:text-6xl mb-8 leading-tight">Where we deliver</h2>
+<p class="text-charcoal font-light leading-relaxed mb-12">From downtown cores to suburban industrial parks, our network spans the entirety of the GTA. We provide seamless, fast, and reliable connections for your business anywhere within the region.</p>
+<div class="flex flex-col gap-4 text-sm tracking-widest uppercase font-light text-navy">
+<span class="border-b border-navy/10 pb-2">Toronto</span>
+<span class="border-b border-navy/10 pb-2">Mississauga</span>
+<span class="border-b border-navy/10 pb-2">Brampton</span>
+<span class="border-b border-navy/10 pb-2">Vaughan</span>
+<span class="border-b border-navy/10 pb-2">Markham</span>
+<span class="border-b border-navy/10 pb-2">Richmond Hill</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Contact Form -->
+<section class="py-32 bg-off-white px-margin-mobile md:px-margin-desktop" id="contact">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-24">
+<h2 class="font-editorial text-4xl md:text-5xl text-navy mb-4">Professional Logistics Quote</h2>
+<p class="text-charcoal font-light">We partner with logistics companies, bakeries, food terminals, and suppliers across the GTA. Fill out the form below to discuss your delivery needs.</p>
+</div>
+<form class="space-y-12" action="mailto:affordablereliabledeliveries@gmail.com" method="POST" enctype="text/plain">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12"><div><label class="block text-xs tracking-[0.2em] uppercase text-charcoal mb-4" for="name">Full Name</label><input class="w-full bg-transparent border-0 border-b border-navy/20 focus:border-navy focus:ring-0 px-0 py-2 text-navy placeholder:text-navy/30 transition-colors rounded-none" id="name" placeholder="John Doe" type="text" name="name"></div><div><label class="block text-xs tracking-[0.2em] uppercase text-charcoal mb-4" for="business-name">Business Name</label><input class="w-full bg-transparent border-0 border-b border-navy/20 focus:border-navy focus:ring-0 px-0 py-2 text-navy placeholder:text-navy/30 transition-colors rounded-none" id="business-name" placeholder="Your Company Name" type="text" name="business_name"></div></div><div class="mt-12"><label class="block text-xs tracking-[0.2em] uppercase text-charcoal mb-4" for="business-type">Business Type</label><select class="w-full bg-transparent border-0 border-b border-navy/20 focus:border-navy focus:ring-0 px-0 py-2 text-navy appearance-none cursor-pointer rounded-none" id="business-type" name="business_type"><option value="" disabled="" selected="">Select Business Type</option><option value="logistics">Logistics Company</option><option value="bakery">Bakery</option><option value="food-terminal">Food Terminal</option><option value="supplier">Supplier / Distributor</option><option value="other">Other Business</option></select></div>
+<div>
+<label class="block text-xs tracking-[0.2em] uppercase text-charcoal mb-4" for="email">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-navy/20 focus:border-navy focus:ring-0 px-0 py-2 text-navy placeholder-navy/30 transition-colors rounded-none" id="email" placeholder="john@company.com" type="email" name="email">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<label class="block text-xs tracking-[0.2em] uppercase text-charcoal mb-4" for="pickup">Pickup Location</label>
+<input class="w-full bg-transparent border-0 border-b border-navy/20 focus:border-navy focus:ring-0 px-0 py-2 text-navy placeholder-navy/30 transition-colors rounded-none" id="pickup" placeholder="City or Postal Code" type="text" name="pickup_location">
+</div>
+<div>
+<label class="block text-xs tracking-[0.2em] uppercase text-charcoal mb-4" for="delivery">Delivery Location</label>
+<input class="w-full bg-transparent border-0 border-b border-navy/20 focus:border-navy focus:ring-0 px-0 py-2 text-navy placeholder-navy/30 transition-colors rounded-none" id="delivery" placeholder="City or Postal Code" type="text" name="delivery_location">
+</div>
+</div>
+<div class=""><label class="block text-xs tracking-[0.2em] uppercase text-charcoal mb-4" for="service-type">Frequency of Delivery</label><select class="w-full bg-transparent border-0 border-b border-navy/20 focus:border-navy focus:ring-0 px-0 py-2 text-navy appearance-none cursor-pointer rounded-none" id="service-type" name="frequency"><option value="" disabled="" selected="">Select Frequency</option><option value="daily">Daily</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="one-time">One Time</option></select></div><div>
+<label class="block text-xs tracking-[0.2em] uppercase text-charcoal mb-4" for="message">Shipment Details</label>
+<textarea class="w-full bg-transparent border border-navy/20 focus:border-navy focus:ring-0 p-4 text-navy placeholder-navy/30 transition-colors rounded-none resize-none" id="message" placeholder="(describe items, weight, requirements)" rows="4" name="message"></textarea>
+</div>
+<div class="pt-8 text-center">
+<button class="bg-navy text-pure-white text-xs tracking-[0.2em] uppercase px-12 py-4 hover:bg-charcoal transition-colors duration-300 rounded-none" type="submit">Submit Business Inquiry</button>
+</div>
+<div class="text-center text-xs text-charcoal-light mt-4 mb-6 px-4">
+  Don't see our reply? Check your spam folder. Add us to your contacts: affordablereliabledeliveries@gmail.com
+</div>
+<div class="mt-12 text-center border-t border-navy/5 pt-12">
+  <p class="text-xs tracking-[0.2em] uppercase text-charcoal mb-6 font-semibold">Or reach us directly on WhatsApp</p>
+  <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+    <a href="https://wa.me/16479798043?text=Hi%2C%20I%20would%20like%20to%20get%20a%20delivery%20quote" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white text-xs tracking-[0.1em] uppercase hover:bg-[#128C7E] transition-colors rounded-none">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.896 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+      Chat on WhatsApp
+    </a>
+  </div>
+</div>
+</form>
+</div>
+</section>
+<!-- Minimal Footer -->
+<footer class="bg-pure-white text-navy px-margin-mobile md:px-margin-desktop py-16 border-t border-navy/5">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-editorial text-2xl font-semibold tracking-wide mb-4">Affordable &amp; Reliable Deliveries</span>
+<p class="text-xs text-charcoal font-light">Fast. Safe. On Time. Every Time.</p>
+</div>
+<div class="flex gap-8 text-xs tracking-[0.2em] uppercase text-charcoal">
+<a class="hover:text-navy transition-colors" href="#home">Home</a>
+<a class="hover:text-navy transition-colors" href="#services">Services</a>
+<a class="hover:text-navy transition-colors" href="#page-contact" onclick="event.preventDefault();showPage('contact')">Contact</a>
+</div>
+<div>
+<p class="text-xs text-charcoal font-light">Â© 2026 Affordable &amp; Reliable Deliveries.</p>
+</div>
+</div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/16479798043?text=Hi%2C%20I%20would%20like%20to%20get%20a%20delivery%20quote" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp" class="fixed bottom-8 right-8 z-[50] flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-300">
+  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.896 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+  </svg>
+</a>
+
+
+<!-- ===== SUB PAGES (hidden modals) ===== -->
+<div id="page-contact" class="fixed inset-0 z-[100] bg-white overflow-y-auto hidden">
+  <div class="relative">
+    <button onclick="closePage()" class="fixed top-4 right-4 z-[200] bg-navy text-white px-4 py-2 text-xs tracking-widest uppercase">✕ Close</button>
+    
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline w-full sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary">
+                Affordable &amp; Reliable Deliveries
+            </div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#services">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#service-area">Service Area</a>
+<a class="font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1" href="/contact.html">Contact</a>
+</nav>
+<button class="hidden md:block bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-DEFAULT hover:bg-primary-container transition-colors duration-200">
+                Get a Quote
+            </button>
+<!-- Mobile Menu Toggle (Decorative) -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col justify-center items-center px-margin-mobile md:px-margin-desktop py-24 max-w-max-width mx-auto w-full gap-16">
+<div class="text-center max-w-2xl mx-auto space-y-6">
+<h1 class="font-headline-xl text-headline-xl text-primary">Get in Touch</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                We're here to help with your logistics and delivery needs. Reach out to us via email or WhatsApp for quick, reliable service across the Greater Toronto Area.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
+<!-- Email Card -->
+<a class="group block p-8 bg-surface-container-lowest border border-outline-variant rounded-lg hover:border-primary transition-all duration-300 relative overflow-hidden flex flex-col items-center justify-center text-center gap-6 shadow-sm hover:shadow-[0_4px_12px_rgba(0,30,64,0.1)]" href="mailto:affordablereliabledeliveries@gmail.com">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></div>
+<div class="w-16 h-16 bg-primary-fixed flex items-center justify-center rounded-full text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="mail">mail</span>
+</div>
+<div class="space-y-2">
+<h3 class="font-headline-md text-headline-md text-primary">Email Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant break-all group-hover:text-primary transition-colors duration-200">
+                        affordablereliabledeliveries@gmail.com
+                    </p>
+</div>
+</a>
+<!-- WhatsApp Card -->
+<a class="group block p-8 bg-surface-container-lowest border border-outline-variant rounded-lg hover:border-secondary transition-all duration-300 relative overflow-hidden flex flex-col items-center justify-center text-center gap-6 shadow-sm hover:shadow-[0_4px_12px_rgba(0,30,64,0.1)]" href="https://wa.me/16479798043" rel="noopener noreferrer" target="_blank">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></div>
+<div class="w-16 h-16 bg-secondary-fixed flex items-center justify-center rounded-full text-secondary">
+<span class="material-symbols-outlined text-[32px]" data-icon="chat">chat</span>
+</div>
+<div class="space-y-2">
+<h3 class="font-headline-md text-headline-md text-primary">WhatsApp</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-secondary transition-colors duration-200">
+                        647-979-8043
+                    </p>
+</div>
+</a>
+</div>
+<!-- Operating Hours / Subtle Info -->
+
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-tertiary-container w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-start gap-gutter w-full px-margin-mobile md:px-margin-desktop py-12 max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-black text-on-primary dark:text-on-tertiary-container mb-8 md:mb-0 max-w-xs">
+                Affordable &amp; Reliable Deliveries
+            </div>
+<div class="flex flex-col gap-4 md:items-end">
+<div class="flex flex-wrap gap-6 md:justify-end">
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-container transition-colors duration-200" href="/privacy.html">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-container transition-colors duration-200" href="/terms.html">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-container transition-colors duration-200" href="/#contact">FAQ</a>
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-container transition-colors duration-200" href="/#contact">Careers</a>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container dark:text-on-tertiary-fixed-variant mt-4 md:mt-8">
+                    © 2024 Affordable &amp; Reliable Deliveries. Serving the Greater Toronto Area.
+                </p>
+</div>
+</div>
+</footer>
+
+
+
+  </div>
+</div>
+
+<div id="page-privacy" class="fixed inset-0 z-[100] bg-white overflow-y-auto hidden">
+  <div class="relative">
+    <button onclick="closePage()" class="fixed top-4 right-4 z-[200] bg-navy text-white px-4 py-2 text-xs tracking-widest uppercase">✕ Close</button>
+    
+<!-- TopNavBar: Suppressed on standard content pages to focus on content, but requested to match main site. Implementing to fulfill 'Navigation should be consistent' requirement while noting the Shell Suppression rule. Will render as a utility header for this context. -->
+<header class="bg-surface border-b border-outline-variant w-full sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="local_shipping" data-weight="fill" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">Affordable &amp; Reliable Deliveries</span>
+</div>
+<!-- Navigation links hidden on mobile, shown on desktop -->
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#services">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#service-area">Service Area</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/contact.html">Contact</a>
+</nav>
+<button class="hidden md:block bg-primary text-on-primary font-label-md text-label-md py-2 px-6 rounded hover:opacity-90 transition-opacity">Get a Quote</button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<div class="max-w-3xl mx-auto bg-surface-container-lowest border border-outline-variant rounded-xl p-8 md:p-12">
+<div class="mb-8 border-l-4 border-primary pl-6">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-2">Privacy Policy</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Last updated: Oct 2023</p>
+</div>
+<div class="space-y-8">
+<section>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                        Affordable &amp; Reliable Deliveries respects your privacy. We are committed to protecting the personal information you entrust to us.
+                    </p>
+</section>
+<section class="bg-surface-container-low p-6 rounded-lg border border-surface-variant">
+<h2 class="font-headline-md text-headline-md text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="data_usage">data_usage</span>
+                        Information Collection
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface">
+                        We only collect information you explicitly provide through our quote form. This data is strictly used to facilitate your delivery request and provide accurate pricing.
+                    </p>
+</section>
+<section class="bg-surface-container-low p-6 rounded-lg border border-surface-variant">
+<h2 class="font-headline-md text-headline-md text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="security">security</span>
+                        Data Sharing
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface">
+                        We maintain a strict policy against sharing your data. We do not sell, rent, or distribute your personal information to any third parties under any circumstances.
+                    </p>
+</section>
+<section class="mt-12 pt-8 border-t border-outline-variant">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Contact Us</h2>
+<p class="font-body-md text-body-md text-on-surface mb-2">If you have any questions regarding this policy, please reach out to us at:</p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary bg-primary-fixed hover:bg-primary-fixed-dim px-4 py-2 rounded transition-colors" href="mailto:affordablereliabledeliveries@gmail.com">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+                        affordablereliabledeliveries@gmail.com
+                    </a>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-start gap-gutter w-full px-margin-mobile md:px-margin-desktop py-12 max-w-max-width mx-auto">
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md font-black text-on-primary">Affordable &amp; Reliable Deliveries</span>
+<p class="font-body-md text-body-md text-on-primary-container max-w-sm">
+                    © 2024 Affordable &amp; Reliable Deliveries. Serving the Greater Toronto Area. Precision in motion.
+                </p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-container transition-colors duration-200" href="/privacy.html">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-container transition-colors duration-200" href="/terms.html">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-secondary-container transition-colors duration-200" href="#">FAQ</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-secondary-container transition-colors duration-200" href="#">Careers</a>
+</div>
+</div>
+</footer>
+
+  </div>
+</div>
+
+<div id="page-terms" class="fixed inset-0 z-[100] bg-white overflow-y-auto hidden">
+  <div class="relative">
+    <button onclick="closePage()" class="fixed top-4 right-4 z-[200] bg-navy text-white px-4 py-2 text-xs tracking-widest uppercase">✕ Close</button>
+    
+<!-- TopNavBar -->
+<header class="bg-surface border-b border-outline-variant w-full docked top-0 z-50 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
+<!-- Brand -->
+<a class="font-headline-md text-headline-md font-bold text-primary tracking-tight flex items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-secondary-container transition-transform group-hover:translate-x-1" data-weight="fill" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+                Affordable &amp; Reliable Deliveries
+            </a>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#services">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#service-area">Service Area</a>
+<a class="font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1" href="/contact.html">Contact</a>
+</nav>
+<!-- Trailing Action -->
+<div class="hidden md:block">
+<a class="inline-flex items-center justify-center px-6 py-3 bg-primary text-on-primary font-label-md text-label-md rounded-DEFAULT hover:bg-primary-container transition-colors duration-200 shadow-[0_4px_12px_rgba(0,30,64,0.1)]" href="#">
+                    Get a Quote
+                </a>
+</div>
+<!-- Mobile Menu Trigger (Placeholder) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
+<!-- Header Section -->
+<div class="max-w-3xl mb-12">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-4">Terms of Service</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Precision and clarity form the foundation of our logistics network. Please review our operating terms below.
+            </p>
+</div>
+<!-- Content Container (Tonal Layering & Structural Outline) -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 md:p-12 max-w-4xl relative overflow-hidden">
+<!-- Structural Accent Pattern (Minimalist) -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary opacity-[0.02] rounded-bl-full pointer-events-none"></div>
+<div class="space-y-12 relative z-10">
+<!-- Section 1: Agreement -->
+<section class="flex flex-col md:flex-row gap-6 items-start">
+<div class="md:w-1/4 shrink-0">
+<div class="w-12 h-12 bg-surface-container rounded-DEFAULT flex items-center justify-center border border-outline-variant mb-4">
+<span class="material-symbols-outlined text-primary">gavel</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Agreement</h2>
+</div>
+<div class="md:w-3/4 border-l-4 border-primary pl-6 py-2 bg-surface-bright p-6 rounded-r-lg border border-outline-variant">
+<p class="font-body-lg text-body-lg text-on-surface">
+                            By using our services you agree to our terms. This ensures a transparent and accountable relationship throughout the lifecycle of your delivery.
+                        </p>
+</div>
+</section>
+<!-- Section 2: Service Area -->
+<section class="flex flex-col md:flex-row gap-6 items-start">
+<div class="md:w-1/4 shrink-0">
+<div class="w-12 h-12 bg-surface-container rounded-DEFAULT flex items-center justify-center border border-outline-variant mb-4">
+<span class="material-symbols-outlined text-primary">map</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Territory</h2>
+</div>
+<div class="md:w-3/4 border-l-4 border-secondary-container pl-6 py-2 bg-surface-bright p-6 rounded-r-lg border border-outline-variant">
+<p class="font-body-lg text-body-lg text-on-surface">
+                            We serve the Greater Toronto Area only. Our concentrated focus within this territory guarantees our commitment to punctuality and operational efficiency.
+                        </p>
+</div>
+</section>
+<!-- Section 3: Financials -->
+<section class="flex flex-col md:flex-row gap-6 items-start">
+<div class="md:w-1/4 shrink-0">
+<div class="w-12 h-12 bg-surface-container rounded-DEFAULT flex items-center justify-center border border-outline-variant mb-4">
+<span class="material-symbols-outlined text-primary">receipt_long</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Quotes</h2>
+</div>
+<div class="md:w-3/4 border-l-4 border-primary pl-6 py-2 bg-surface-bright p-6 rounded-r-lg border border-outline-variant">
+<p class="font-body-lg text-body-lg text-on-surface">
+                            All quotes are subject to confirmation. Rates may vary based on specific handling requirements, volumetric weight, and current logistical routing constraints.
+                        </p>
+</div>
+</section>
+<!-- Section 4: Contact -->
+<section class="flex flex-col md:flex-row gap-6 items-start pt-6 border-t border-outline-variant">
+<div class="md:w-1/4 shrink-0">
+<h2 class="font-headline-md text-headline-md text-primary mt-2">Inquiries</h2>
+</div>
+<div class="md:w-3/4">
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">For clarification regarding these terms, direct communications to our administrative team:</p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary-container hover:text-secondary transition-colors duration-200" href="mailto:affordablereliabledeliveries@gmail.com">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+                            affordablereliabledeliveries@gmail.com
+                        </a>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-start gap-gutter w-full px-margin-mobile md:px-margin-desktop py-12 max-w-max-width mx-auto">
+<!-- Brand / Copyright -->
+<div class="flex flex-col gap-6 max-w-sm">
+<span class="font-headline-md text-headline-md font-black text-on-primary tracking-tight">Affordable &amp; Reliable Deliveries</span>
+<p class="font-body-md text-body-md text-on-primary opacity-80">
+                    © 2024 Affordable &amp; Reliable Deliveries. Serving the Greater Toronto Area. Precision in motion.
+                </p>
+</div>
+<!-- Links -->
+<nav class="flex flex-wrap gap-x-8 gap-y-4 mt-8 md:mt-0">
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-container transition-colors duration-200" href="/privacy.html">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-container transition-colors duration-200" href="/terms.html">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-container transition-colors duration-200" href="/#contact">FAQ</a>
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-container transition-colors duration-200" href="/#contact">Careers</a>
+</nav>
+</div>
+</footer>
+
+  </div>
+</div>
+
+<script>
+function showPage(id) {
+  document.querySelectorAll('[id^="page-"]').forEach(el => el.classList.add('hidden'));
+  document.getElementById('page-' + id).classList.remove('hidden');
+  window.scrollTo(0, 0);
+}
+function closePage() {
+  document.querySelectorAll('[id^="page-"]').forEach(el => el.classList.add('hidden'));
+}
+// URL hash routing
+window.addEventListener('load', function() {
+  const hash = window.location.hash;
+  if (hash === '#page-contact') showPage('contact');
+  if (hash === '#page-privacy') showPage('privacy');
+  if (hash === '#page-terms') showPage('terms');
+});
+</script>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
