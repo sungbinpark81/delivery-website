@@ -489,6 +489,9 @@ Chat Now <span class="material-symbols-outlined text-sm transform group-hover:tr
     function handleFormSubmit(event) {
         event.preventDefault();
         const form = document.getElementById('logistics-form');
+        const btn = form.querySelector('button[type="submit"]');
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
         fetch(form.action, {
             method: 'POST',
             body: new FormData(form),
@@ -499,7 +502,15 @@ Chat Now <span class="material-symbols-outlined text-sm transform group-hover:tr
                 const success = document.getElementById('form-success');
                 success.classList.remove('hidden');
                 success.classList.add('flex');
+            } else {
+                btn.textContent = 'Submit Business Inquiry';
+                btn.disabled = false;
+                alert('There was an error sending your message. Please try again or contact us directly at affordablereliabledeliveries@gmail.com');
             }
+        }).catch(() => {
+            btn.textContent = 'Submit Business Inquiry';
+            btn.disabled = false;
+            alert('There was an error sending your message. Please try again or contact us directly at affordablereliabledeliveries@gmail.com');
         });
     }
     function resetForm() {
