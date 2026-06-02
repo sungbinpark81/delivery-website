@@ -3,7 +3,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Affordable &amp; Reliable Deliveries - Premium</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
         tailwind.config = {
@@ -16,15 +16,46 @@
                         "charcoal-light": "#737373",
                         "off-white": "#F7F7F5",
                         "pure-white": "#FFFFFF",
-                        "accent": "#C4A484"
+                        "accent": "#C4A484",
+                        "primary": "#001e40",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#003366",
+                        "on-primary-container": "#799dd6",
+                        "primary-fixed": "#d5e3ff",
+                        "inverse-primary": "#a7c8ff",
+                        "secondary": "#904d00",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#fd8b00",
+                        "on-secondary-container": "#603100",
+                        "secondary-fixed": "#ffdcc3",
+                        "tertiary-container": "#303436",
+                        "on-tertiary-container": "#999c9f",
+                        "surface": "#f9f9fc",
+                        "surface-bright": "#f9f9fc",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f3f3f6",
+                        "surface-container": "#eeeef0",
+                        "surface-container-high": "#e8e8ea",
+                        "surface-variant": "#e2e2e5",
+                        "on-surface": "#1a1c1e",
+                        "on-surface-variant": "#43474f",
+                        "inverse-surface": "#2f3133",
+                        "inverse-on-surface": "#f0f0f3",
+                        "outline": "#737780",
+                        "outline-variant": "#c3c6d1"
                     },
                     "fontFamily": {
                         "editorial": ["Playfair Display", "serif"],
-                        "sans": ["Montserrat", "sans-serif"]
+                        "sans": ["Montserrat", "sans-serif"],
+                        "body": ["Inter", "sans-serif"]
                     },
                     "spacing": {
                         "margin-mobile": "32px",
                         "margin-desktop": "128px",
+                        "gutter": "24px"
+                    },
+                    "maxWidth": {
+                        "max-width": "1280px"
                     }
                 }
             }
@@ -54,13 +85,24 @@
         .editorial-service-item:hover .service-bg {
             opacity: 1;
         }
-    #main-nav { display: flex !important; align-items: center !important; gap: 0 !important; }
+    @media (max-width: 767px) { #main-nav { display: none !important; } }
+    @media (min-width: 768px) { #main-nav { display: flex !important; align-items: center !important; gap: 0 !important; } }
     #main-nav a { padding: 0 18px !important; font-size: 0.75rem !important; letter-spacing: 0.1em !important; text-transform: uppercase !important; color: #0A1128 !important; text-decoration: none !important; font-family: Montserrat, sans-serif !important; white-space: nowrap !important; }
     #main-nav a:last-child { background: #0A1128 !important; color: #fff !important; padding: 10px 22px !important; margin-left: 8px !important; }
     #main-nav a:hover { color: #fd8b00 !important; }
     #main-nav a:last-child:hover { background: #fd8b00 !important; color: #fff !important; }    /* 모달 내부 nav 간격 */
     [id^="page-"] nav { display: flex !important; gap: 1.5rem !important; align-items: center !important; }
-    [id^="page-"] nav a { white-space: nowrap !important; margin: 0 !important; padding: 0 8px !important; }    </style>
+    [id^="page-"] nav a { white-space: nowrap !important; margin: 0 !important; padding: 0 8px !important; }
+    .font-headline-xl, .text-headline-xl { font-family: 'Montserrat', sans-serif; font-size: 48px; font-weight: 700; line-height: 56px; letter-spacing: -0.02em; }
+    .font-headline-lg, .text-headline-lg { font-family: 'Montserrat', sans-serif; font-size: 32px; font-weight: 700; line-height: 40px; }
+    .font-headline-lg-mobile, .text-headline-lg-mobile { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 700; line-height: 36px; }
+    .font-headline-md, .text-headline-md { font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 600; line-height: 32px; }
+    .font-body-lg, .text-body-lg { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 400; line-height: 28px; }
+    .font-body-md, .text-body-md { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+    .font-label-md, .text-label-md { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; line-height: 20px; letter-spacing: 0.05em; }
+    .rounded-DEFAULT { border-radius: 0.25rem; }
+    .gap-gutter { gap: 24px; }
+    .max-w-max-width { max-width: 1280px; }    </style>
 </head>
 <body class="bg-off-white text-navy font-sans antialiased overflow-x-hidden selection:bg-navy selection:text-off-white">
 <!-- Navbar -->
@@ -80,6 +122,7 @@
   <a class="text-xs tracking-[0.15em] uppercase text-navy" href="#home">Home</a>
   <a class="text-xs tracking-[0.15em] uppercase text-navy" href="#services">Services</a>
   <a class="text-xs tracking-[0.15em] uppercase text-navy" href="#service-area">Service Area</a>
+  <a class="text-xs tracking-[0.15em] uppercase bg-navy text-pure-white px-4 py-2 text-center" href="#contact">Get a Quote</a>
 </div>
 <!-- Editorial Hero -->
 <section class="relative w-full min-h-[90vh] px-margin-mobile md:px-margin-desktop pb-32 flex flex-col justify-center" id="home">
@@ -90,7 +133,7 @@
   </span>
   <div class="w-12 h-0.5 bg-[#fd8b00] mt-2"></div>
 </div>
-<h1 class="font-editorial text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-8 font-medium">Fast &amp; Deliveries Across the GTA</h1>
+<h1 class="font-editorial text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-8 font-medium">Fast &amp; Reliable Deliveries Across the GTA</h1>
 <div class="bg-pure-white p-8 md:p-12 max-w-lg shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] border border-navy/5 ml-0 md:ml-12 mt-[-2rem] md:mt-0 relative z-20">
 <p class="text-sm md:text-base text-charcoal leading-relaxed mb-8 font-light">We provide simple, reliable delivery services across the GTA. We focus on getting your items where they need to go, on time.</p>
 <a class="inline-flex items-center gap-4 text-xs tracking-[0.2em] uppercase text-navy group" href="#contact">
@@ -325,7 +368,7 @@
 <a class="hover:text-navy transition-colors" href="#page-contact" onclick="event.preventDefault();showPage('contact')">Contact</a>
 </div>
 <div>
-<p class="text-xs text-charcoal font-light">Â© 2026 Affordable &amp; Reliable Deliveries.</p>
+<p class="text-xs text-charcoal font-light">&copy; 2026 Affordable &amp; Reliable Deliveries.</p>
 </div>
 </div>
 </footer>
@@ -350,10 +393,10 @@
                 Affordable &amp; Reliable Deliveries
             </div>
 <nav class="hidden md:flex gap-gutter items-center">
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/">Home</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#services">Services</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#service-area">Service Area</a>
-<a class="font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1" href="/contact.html">Contact</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/" onclick="closePage()">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#services" onclick="closePage()">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#service-area" onclick="closePage()">Service Area</a>
+<a class="font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1" href="#" onclick="event.preventDefault()">Contact</a>
 </nav>
 <button class="hidden md:block bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-DEFAULT hover:bg-primary-container transition-colors duration-200">
                 Get a Quote
@@ -417,7 +460,7 @@
 <a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-container transition-colors duration-200" href="/#contact">Careers</a>
 </div>
 <p class="font-body-md text-body-md text-on-primary-container dark:text-on-tertiary-fixed-variant mt-4 md:mt-8">
-                    © 2024 Affordable &amp; Reliable Deliveries. Serving the Greater Toronto Area.
+                    © 2026 Affordable &amp; Reliable Deliveries. Serving the Greater Toronto Area.
                 </p>
 </div>
 </div>
@@ -441,10 +484,10 @@
 </div>
 <!-- Navigation links hidden on mobile, shown on desktop -->
 <nav class="hidden md:flex gap-8 items-center">
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/">Home</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#services">Services</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#service-area">Service Area</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/contact.html">Contact</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/" onclick="closePage()">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#services" onclick="closePage()">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#service-area" onclick="closePage()">Service Area</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#contact" onclick="closePage()">Contact</a>
 </nav>
 <button class="hidden md:block bg-primary text-on-primary font-label-md text-label-md py-2 px-6 rounded hover:opacity-90 transition-opacity">Get a Quote</button>
 <!-- Mobile Menu Toggle -->
@@ -458,7 +501,7 @@
 <div class="max-w-3xl mx-auto bg-surface-container-lowest border border-outline-variant rounded-xl p-8 md:p-12">
 <div class="mb-8 border-l-4 border-primary pl-6">
 <h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-2">Privacy Policy</h1>
-<p class="font-body-md text-body-md text-on-surface-variant">Last updated: Oct 2023</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Last updated: January 2026</p>
 </div>
 <div class="space-y-8">
 <section>
@@ -501,7 +544,7 @@
 <div class="flex flex-col gap-4">
 <span class="font-headline-md text-headline-md font-black text-on-primary">Affordable &amp; Reliable Deliveries</span>
 <p class="font-body-md text-body-md text-on-primary-container max-w-sm">
-                    © 2024 Affordable &amp; Reliable Deliveries. Serving the Greater Toronto Area. Precision in motion.
+                    © 2026 Affordable &amp; Reliable Deliveries. Serving the Greater Toronto Area. Precision in motion.
                 </p>
 </div>
 <div class="flex flex-col gap-2">
@@ -530,10 +573,10 @@
             </a>
 <!-- Navigation Links (Desktop) -->
 <nav class="hidden md:flex gap-8 items-center">
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/">Home</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#services">Services</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#service-area">Service Area</a>
-<a class="font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1" href="/contact.html">Contact</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/" onclick="closePage()">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#services" onclick="closePage()">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/#service-area" onclick="closePage()">Service Area</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#contact" onclick="closePage()">Contact</a>
 </nav>
 <!-- Trailing Action -->
 <div class="hidden md:block">
@@ -626,7 +669,7 @@
 <div class="flex flex-col gap-6 max-w-sm">
 <span class="font-headline-md text-headline-md font-black text-on-primary tracking-tight">Affordable &amp; Reliable Deliveries</span>
 <p class="font-body-md text-body-md text-on-primary opacity-80">
-                    © 2024 Affordable &amp; Reliable Deliveries. Serving the Greater Toronto Area. Precision in motion.
+                    © 2026 Affordable &amp; Reliable Deliveries. Serving the Greater Toronto Area. Precision in motion.
                 </p>
 </div>
 <!-- Links -->
